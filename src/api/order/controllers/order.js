@@ -1,7 +1,7 @@
 // src/api/order/controllers/order.js
 'use strict';
 
-const stripe = require('stripe')("sk_test_51LkBlcKuOke8qQn9HQPcq3SEtJ9lgiX162eHeOJuXiYrTXewPEwyQ4RnRUtbaLSkxneFBeAi0QCXTlPeDWeQ4jfL00n79jcXyP");
+const stripe = require('stripe')(process.env.STRIPE_KEY);
 /**
  *  order controller
  */
