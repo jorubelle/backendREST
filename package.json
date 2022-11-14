@@ -9,13 +9,13 @@
     "build": "strapi build",
     "strapi": "strapi"
   },
-  "devDependencies": {},
   "dependencies": {
     "@strapi/plugin-graphql": "4.5.0",
     "@strapi/plugin-i18n": "4.5.0",
     "@strapi/plugin-users-permissions": "4.5.0",
     "@strapi/strapi": "4.5.0",
     "better-sqlite3": "7.4.6",
+    "strapi-stripe": "^2.5.1",
     "stripe": "^10.17.0"
   },
   "author": {
