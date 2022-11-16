@@ -8,7 +8,7 @@ module.exports = ({ env }) => {
       defaultConnection: 'default',
       connections: {
         default: {
-          connector: 'bookshelf',
+          //connector: 'bookshelf',
           settings: {
             client: 'postgres',
             host: config.host,
@@ -18,7 +18,9 @@ module.exports = ({ env }) => {
             password: config.password,
           },
           options: {
-            ssl: false,
+            ssl: {
+                  rejectUnauthorized: false
+                }
           },
         },
       },
@@ -29,7 +31,7 @@ module.exports = ({ env }) => {
     defaultConnection: 'default',
     connections: {
       default: {
-        connector: 'bookshelf',
+        //connector: 'bookshelf',
         settings: {
           client: 'sqlite',
           filename: env('DATABASE_FILENAME', '.tmp/data.db'),
