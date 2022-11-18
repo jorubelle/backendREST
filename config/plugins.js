@@ -1,7 +1,4 @@
-module.exports = ({ env }) => {
-
-    if(env('NODE_ENV') === 'production'){
-        return{
+module.exports = ({ env }) => ({
             upload: {
             provider: 'aws-s3',
             providerOptions: {
@@ -18,9 +15,5 @@ module.exports = ({ env }) => {
                 delete: {},
               },
         }
-    }
-}
-    return {
-
-    }
-}
+    })
+    
